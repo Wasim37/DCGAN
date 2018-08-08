@@ -77,6 +77,15 @@ def main(_):
     OPTION = 1
     visualize(sess, dcgan, FLAGS, OPTION)
 
-#--dataset mnist --data_dir F:/git_pro/machine_learning_python_code/15-GAN/DCGAN/DCGAN/data/ --train
+
+    
+# 训练
+  #$ python main.py --dataset mnist --input_height=28 --output_height=28 --train
+  #$ python main.py --dataset celebA --input_height=108 --train --crop
+  
+# 测试
+  #$ python main.py --dataset mnist --input_height=28 --output_height=28
+  #$ python main.py --dataset celebA --input_height=108 --crop
+    
 if __name__ == '__main__':
   tf.app.run()
